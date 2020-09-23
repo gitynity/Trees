@@ -11,7 +11,24 @@ int main() {
     int temp = x;
     t.push_back(x);
   }
-
+  //tree representation complete. tree is represented in array by its level order traversal.
+  //array is created in such a way that when a child node does not exist for a parent node we represent that missing child by -1.
+  
+  /*
+  For example, array t[]: 55 , 10 , 32 , 0 , -1 , 3 , 4 , -1 , -1 , -1 , 6 
+  will represent the following binary tree...
+  
+           55
+         /    \
+        /      \
+       10       32
+      / \     /   \
+     0       3      4
+            / \    / \
+                      6  
+           
+  */
+  
   //find height
   int i = n - 1;
   int h = 0;
